@@ -1,7 +1,7 @@
 # English
 ### Installation
 
-1. Download the extension file from the repository.
+1. Download the [WinRAR file](https://github.com/k0ng999/SKIP_ADD_YouTube/blob/master/my-youtube-extension.zip) from the repository.
 2. Open your browser and go to the extensions page.
 3. Enable developer mode (if it's not already enabled).
 4. Click "Load unpacked" and select the folder where you saved the extension file.
@@ -11,7 +11,7 @@ It will start working as soon as you open YouTube.
 # Russian
 ### Установка
 
-1. Скачайте файл расширения с репозитория.
+1. Скачайте [файл WinRAR](https://github.com/k0ng999/SKIP_ADD_YouTube/blob/master/my-youtube-extension.zip) из репозитория.
 2. Откройте браузер и перейдите на страницу расширений.
 3. Включите режим разработчика (если он еще не включен).
 4. Нажмите "Загрузить распакованное расширение" и выберите папку, в которую вы сохранили файл расширения.
