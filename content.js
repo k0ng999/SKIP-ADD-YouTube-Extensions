@@ -34,3 +34,4 @@ function startObserver() {
 window.addEventListener('load', () => {
   startObserver();
 });
+
