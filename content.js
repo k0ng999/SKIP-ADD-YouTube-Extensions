@@ -1,14 +1,12 @@
 function checkAndClickButtons() {
   const buttons = document.querySelectorAll('.ytp-skip-ad-button');
 
-
   buttons.forEach(button => {
     if (button) {
       button.click();
       console.log('Реклама успешно пропущена!');
     }
   });
-
 
   if (document.querySelector('.ytp-preview-ad__text')) {
     var video = document.querySelector('video');
@@ -19,14 +17,20 @@ function checkAndClickButtons() {
       console.log('Продолжительность видео неизвестна.');
     }
   }
-
 }
 
-function startClicking() {
-  setInterval(checkAndClickButtons, 1000);
-}
+function startObserver() {
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'childList' || mutation.type === 'subtree') {
+        checkAndClickButtons();
+      }
+    });
+  });
 
+  observer.observe(document.body, { childList: true, subtree: true });
+}
 
 window.addEventListener('load', () => {
-  startClicking();
+  startObserver();
 });
