@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Skip ADD",
+  "version": "1.0",
+  "description": "",
+  "permissions": [
+    "activeTab",
+    "webNavigation"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ]
+}
